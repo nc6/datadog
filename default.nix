@@ -13,8 +13,9 @@ let
       mkDerivation {
         pname = "datadog";
         version = "0.2.0.0";
-        sha256 = "0";
+        src = ./.;
         doCheck = false;
+        doHaddock = false;
         libraryHaskellDepends = [
           aeson auto-update base buffer-builder bytestring dlist http-client
           http-client-tls http-types lens lifted-base monad-control network
